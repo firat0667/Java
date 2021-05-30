@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.postgreSQLDialect</property> 
+        <property  name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+         <property  name="hibernate.connection.url">jdbc:postgresql://localhost:5432/deneme</property>
+         <property  name="hibernate.connection.username">postgres</property>
+         <property  name="hibernate.connection.password">313131</property>
+         
+         
+         <property name="hibernate.show_sql">true</property>
+         
+         <property  name="hibernate.hbm2ddl">update</property> 
+         <!-- create de olabılırdi -->
+         <property name="format_sql">true</property>
+         
+         <mapping class="com.vektorel.hibernateproje.models.Ogrenci"></mapping>
+        
+    </session-factory>
+    
+    
+</hibernate-configuration>
